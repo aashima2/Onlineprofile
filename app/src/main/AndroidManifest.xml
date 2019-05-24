@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.onlineprofile">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".skills"
+            android:label="Skills"></activity>
+        <activity
+            android:name=".editemployementdata"
+            android:label="Edit Employment History" />
+        <activity
+            android:name=".Editeducation"
+            android:label="Edit Education" />
+        <activity
+            android:name=".Employmentdetails"
+            android:label="Employee details" />
+        <activity
+            android:name=".Usersprofile"
+            android:label="users profile" />
+        <activity
+            android:name=".Navigationloginvscreate"
+            android:label="Home page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".usersdetails"
+            android:label="Users creation" />
+        <activity
+            android:name=".Educationdetails"
+            android:label="Educational details" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

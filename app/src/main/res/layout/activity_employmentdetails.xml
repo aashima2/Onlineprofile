@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Employmentdetails">
+
+    <EditText
+        android:id="@+id/Designation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Designation"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Organisation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Organization"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Designation" />
+
+    <EditText
+        android:id="@+id/startyear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Year"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Organisation" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="96dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Worked Till"
+        android:textColor="#000"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startyear" />
+
+
+    <EditText
+        android:id="@+id/workedtill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:inputType="number"
+        android:textColor="#000"
+        android:hint="year till worked"
+        android:textSize="19dp"
+        android:maxLength="4"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="0dp" />
+        <!--android:focusableInTouchMode="false"-->
+
+
+    <EditText
+        android:id="@+id/Jobdescription"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Describe your profile"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workedtill" />
+
+    <Button
+        android:id="@+id/saveemployeedetails"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:text="Save"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Jobdescription" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

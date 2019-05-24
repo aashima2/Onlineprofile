@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onlineprofile"
+    tools:context=".Navigationloginvscreate">
+
+
+
+    <Button
+        android:id="@+id/navigate_to_login"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="304dp"
+
+        android:background="@android:color/transparent"
+        android:text=" login"
+        android:textColor="@android:color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+
+        android:id="@+id/navigate_to_create_account"
+        android:layout_width="125dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="304dp"
+
+        android:background="@android:color/transparent"
+        android:text="Create Account "
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
